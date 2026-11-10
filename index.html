@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recomeço: conectando alimentos excedentes a quem precisa.">
+    <title>Recomeço | Menos desperdício, mais esperança</title>
+</head>
+<escape><link rel="stylesheet" href="css/style.css"></escape>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <a href="#inicio" class="logo">Recomeço<span>.</span></a>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#doacoes">Doações</a>
+            <a href="#impacto">Nosso impacto</a>
+        </nav>
+
+        <div>
+            <button type="button" id="btnEntrar">Entrar</button>
+            <button type="button" id="btnQueroDoar">Quero doar</button>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- APRESENTAÇÃO PRINCIPAL -->
+        <section id="inicio" class="hero">
+
+            <div class="hero-conteudo">
+                <p class="etiqueta">COMIDA BOA. DESTINO MELHOR.</p>
+
+                <h1>
+                    Nenhum alimento deveria ser
+                    <span>desperdiçado</span>
+                    enquanto alguém precisa dele.
+                </h1>
+
+                <p>
+                    Conectamos estabelecimentos com alimentos excedentes
+                    a instituições que precisam deles.
+                    Simples para quem doa, importante para quem recebe.
+                </p>
+
+                <div class="hero-botoes">
+                    <a href="#formulario-doacao">Tenho alimentos para doar</a>
+                    <a href="#doacoes">Encontrar doações</a>
+                </div>
+            </div>
+
+            <div class="hero-imagem">
+                <img
+                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=85"
+                    alt="Alimentos frescos disponíveis para doação"
+                >
+
+                <p>Uma nova oportunidade começa com você.</p>
+            </div>
+
+        </section>
+
+
+        <!-- BENEFÍCIOS -->
+        <section id="beneficios" class="beneficios">
+
+            <article>
+                <h3>Menos desperdício</h3>
+                <p>Mais alimentos aproveitados e menos comida descartada.</p>
+            </article>
+
+            <article>
+                <h3>Mais solidariedade</h3>
+                <p>Doações que podem chegar a pessoas em situação de vulnerabilidade.</p>
+            </article>
+
+            <article>
+                <h3>Impacto positivo</h3>
+                <p>Uma comunidade unida para construir um futuro melhor.</p>
+            </article>
+
+        </section>
+
+
+        <!-- COMO FUNCIONA -->
+        <section id="como-funciona" class="secao">
+
+            <div class="titulo-secao">
+                <p>É MAIS SIMPLES DO QUE PARECE</p>
+                <h2>Uma boa ação. Três passos.</h2>
+
+                <p>
+                    O Recomeço aproxima quem tem alimentos disponíveis
+                    de organizações que podem aproveitá-los com segurança.
+                </p>
+            </div>
+
+            <div class="passos">
+
+                <article class="card-passo">
+                    <span>01</span>
+                    <h3>Cadastre a doação</h3>
+                    <p>
+                        Informe o alimento, a quantidade,
+                        a validade e o local para retirada.
+                    </p>
+                </article>
+
+                <article class="card-passo">
+                    <span>02</span>
+                    <h3>Encontre quem precisa</h3>
+                    <p>
+                        Instituições podem visualizar as doações
+                        e solicitar os alimentos disponíveis.
+                    </p>
+                </article>
+
+                <article class="card-passo">
+                    <span>03</span>
+                    <h3>Combine a entrega</h3>
+                    <p>
+                        O doador e a instituição combinam
+                        a retirada dos alimentos.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- DOAÇÕES DISPONÍVEIS -->
+        <section id="doacoes" class="secao doacoes">
+
+            <div class="titulo-secao">
+                <p>OPORTUNIDADES DE HOJE</p>
+                <h2>Alimentos esperando um novo destino.</h2>
+            </div>
+
+            <div class="controles-doacoes">
+
+                <input
+                    type="search"
+                    id="buscarDoacao"
+                    placeholder="Buscar alimento ou estabelecimento..."
+                    aria-label="Buscar doações"
+                >
+
+                <div class="filtros">
+                    <button type="button" data-categoria="Todos">Todos</button>
+                    <button type="button" data-categoria="Pães">Pães</button>
+                    <button type="button" data-categoria="Frutas e verduras">Frutas e verduras</button>
+                    <button type="button" data-categoria="Laticínios">Laticínios</button>
+                    <button type="button" data-categoria="Outros">Outros</button>
+                </div>
+
+            </div>
+
+            <div id="listaDoacoes" class="lista-doacoes">
+
+                <article class="card-doacao" data-categoria="Pães">
+                    <img
+                        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80"
+                        alt="Pães variados"
+                    >
+
+                    <div>
+                        <p>Disponível para retirada</p>
+                        <h3>Kit de pães variados</h3>
+                        <p>Padaria Bom Dia</p>
+                        <p>Quantidade: 20 unidades</p>
+                        <p>Retirada: combinar com o estabelecimento</p>
+                        <button type="button" class="btnInteresse" data-alimento="Kit de pães variados">
+                            Tenho interesse
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card-doacao" data-categoria="Frutas e verduras">
+                    <img
+                        src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=80"
+                        alt="Frutas e verduras frescas"
+                    >
+
+                    <div>
+                        <p>Disponível para retirada</p>
+                        <h3>Caixa de frutas e legumes</h3>
+                        <p>Mercado Boa Colheita</p>
+                        <p>Quantidade: 8 kg</p>
+                        <p>Retirada: combinar com o estabelecimento</p>
+                        <button type="button" class="btnInteresse" data-alimento="Caixa de frutas e legumes">
+                            Tenho interesse
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card-doacao" data-categoria="Laticínios">
+                    <img
+                        src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=700&q=80"
+                        alt="Leite e outros laticínios"
+                    >
+
+                    <div>
+                        <p>Disponível para retirada</p>
+                        <h3>Leite e iogurtes fechados</h3>
+                        <p>Mercado Central</p>
+                        <p>Quantidade: 12 unidades</p>
+                        <p>Validade: verificar com o doador</p>
+                        <button type="button" class="btnInteresse" data-alimento="Leite e iogurtes fechados">
+                            Tenho interesse
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card-doacao" data-categoria="Frutas e verduras">
+                    <img
+                        src="https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&w=700&q=80"
+                        alt="Verduras frescas"
+                    >
+
+                    <div>
+                        <p>Disponível para retirada</p>
+                        <h3>Caixa de verduras</h3>
+                        <p>Hortifruti da Praça</p>
+                        <p>Quantidade: 5 kg</p>
+                        <p>Retirada: combinar com o estabelecimento</p>
+                        <button type="button" class="btnInteresse" data-alimento="Caixa de verduras">
+                            Tenho interesse
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card-doacao" data-categoria="Pães">
+                    <img
+                        src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80"
+                        alt="Pães e produtos de padaria"
+                    >
+
+                    <div>
+                        <p>Disponível para retirada</p>
+                        <h3>Pães e bolos do dia</h3>
+                        <p>Sabor Caseiro</p>
+                        <p>Quantidade: 15 unidades</p>
+                        <p>Retirada: combinar com o estabelecimento</p>
+                        <button type="button" class="btnInteresse" data-alimento="Pães e bolos do dia">
+                            Tenho interesse
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card-doacao" data-categoria="Outros">
+                    <img
+                        src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+                        alt="Alimentos variados"
+                    >
+
+                    <div>
+                        <p>Disponível para retirada</p>
+                        <h3>Cesta de alimentos</h3>
+                        <p>Mercado Esperança</p>
+                        <p>Quantidade: 6 itens</p>
+                        <p>Validade: verificar com o doador</p>
+                        <button type="button" class="btnInteresse" data-alimento="Cesta de alimentos">
+                            Tenho interesse
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="mensagemSemResultados" hidden>
+                Nenhuma doação encontrada.
+            </p>
+
+            <p class="aviso">
+                Os alimentos e estabelecimentos desta página são exemplos
+                fictícios para demonstração do projeto.
+            </p>
+
+        </section>
+
+
+        <!-- FORMULÁRIO DE DOAÇÃO -->
+        <section id="formulario-doacao" class="secao">
+
+            <div class="titulo-secao">
+                <p>FAÇA PARTE DA MUDANÇA</p>
+                <h2>Cadastre uma doação</h2>
+                <p>
+                    Ajude a dar um novo destino aos alimentos
+                    que ainda podem ser consumidos.
+                </p>
+            </div>
+
+            <form id="formDoacao">
+
+                <label for="nomeEstabelecimento">Nome do estabelecimento</label>
+                <input
+                    type="text"
+                    id="nomeEstabelecimento"
+                    name="estabelecimento"
+                    required
+                    placeholder="Ex.: Padaria da Vila"
+                >
+
+                <label for="nomeAlimento">Qual alimento será doado?</label>
+                <input
+                    type="text"
+                    id="nomeAlimento"
+                    name="alimento"
+                    required
+                    placeholder="Ex.: Pães, frutas ou legumes"
+                >
+
+                <label for="quantidade">Quantidade disponível</label>
+                <input
+                    type="text"
+                    id="quantidade"
+                    name="quantidade"
+                    required
+                    placeholder="Ex.: 10 unidades"
+                >
+
+                <label for="categoriaAlimento">Categoria</label>
+                <select id="categoriaAlimento" name="categoria" required>
+                    <option value="">Selecione uma categoria</option>
+                    <option value="Pães">Pães</option>
+                    <option value="Frutas e verduras">Frutas e verduras</option>
+                    <option value="Laticínios">Laticínios</option>
+                    <option value="Outros">Outros</option>
+                </select>
+
+                <label for="endereco">Endereço para retirada</label>
+                <input
+                    type="text"
+                    id="endereco"
+                    name="endereco"
+                    required
+                    placeholder="Rua, número e bairro"
+                >
+
+                <label for="contatoDoador">Contato do responsável</label>
+                <input
+                    type="text"
+                    id="contatoDoador"
+                    name="contato"
+                    required
+                    placeholder="Telefone ou e-mail"
+                >
+
+                <button type="submit">Cadastrar doação</button>
+
+                <p id="resultadoDoacao" role="status" hidden></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- CADASTRO DE INSTITUIÇÃO -->
+        <section id="instituicoes" class="secao">
+
+            <div class="titulo-secao">
+                <p>QUEM PRECISA TAMBÉM FAZ PARTE</p>
+                <h2>Cadastre sua instituição</h2>
+                <p>
+                    Instituições sociais podem se conectar
+                    a estabelecimentos que têm alimentos disponíveis.
+                </p>
+            </div>
+
+            <form id="formInstituicao">
+
+                <label for="nomeInstituicao">Nome da instituição</label>
+                <input
+                    type="text"
+                    id="nomeInstituicao"
+                    name="instituicao"
+                    required
+                    placeholder="Nome da organização"
+                >
+
+                <label for="tipoInstituicao">Tipo de instituição</label>
+                <select id="tipoInstituicao" name="tipo" required>
+                    <option value="">Selecione</option>
+                    <option value="Assistência social">Assistência social</option>
+                    <option value="Abrigo">Abrigo</option>
+                    <option value="Projeto comunitário">Projeto comunitário</option>
+                    <option value="Outra">Outra organização</option>
+                </select>
+
+                <label for="localInstituicao">Cidade e bairro</label>
+                <input
+                    type="text"
+                    id="localInstituicao"
+                    name="local"
+                    required
+                    placeholder="Cidade e bairro"
+                >
+
+                <label for="contatoInstituicao">Contato responsável</label>
+                <input
+                    type="text"
+                    id="contatoInstituicao"
+                    name="contato"
+                    required
+                    placeholder="Telefone ou e-mail"
+                >
+
+                <button type="submit">Solicitar cadastro</button>
+
+                <p id="resultadoInstituicao" role="status" hidden></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- IMPACTO SOCIAL -->
+        <section id="impacto" class="secao impacto">
+
+            <div>
+                <p>CADA GESTO CONTA</p>
+                <h2>Quando compartilhamos, todo mundo ganha.</h2>
+                <p>
+                    O impacto começa com uma doação.
+                    Imagine o que podemos fazer quando uma comunidade inteira participa.
+                </p>
+                <a href="#formulario-doacao">Faça parte da rede</a>
+            </div>
+
+            <div class="numeros">
+                <article>
+                    <strong>1.250+</strong>
+                    <p>alimentos aproveitados*</p>
+                </article>
+
+                <article>
+                    <strong>320+</strong>
+                    <p>pessoas apoiadas*</p>
+                </article>
+
+                <article>
+                    <strong>85+</strong>
+                    <p>parceiros da comunidade*</p>
+                </article>
+            </div>
+
+            <p>
+                *Números ilustrativos para o protótipo.
+                Não representam resultados reais.
+            </p>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- JANELA DE ENTRADA -->
+    <dialog id="modalEntrar">
+        <button type="button" id="fecharEntrar" aria-label="Fechar">X</button>
+
+        <h2>Entrar no Recomeço</h2>
+
+        <p>
+            Esta área será conectada a um sistema de contas
+            em uma próxima etapa do projeto.
+        </p>
+
+        <form id="formEntrar">
+            <label for="emailLogin">E-mail</label>
+            <input type="email" id="emailLogin" required placeholder="voce@email.com">
+
+            <label for="senhaLogin">Senha</label>
+            <input type="password" id="senhaLogin" required placeholder="Sua senha">
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p id="resultadoLogin" role="status" hidden></p>
+    </dialog>
+
+
+        <!-- TROCA DE RECICLÁVEIS POR ALIMENTOS -->
+        <section id="reciclagem" class="secao reciclagem">
+
+            <div class="titulo-secao">
+                <p>RECICLE, ACUMULE E TRANSFORME</p>
+                <h2>O que você recicla pode alimentar alguém.</h2>
+                <p>
+                    Entregue materiais recicláveis, acumule pontos
+                    e troque por alimentos.
+                </p>
+            </div>
+
+            <!-- SALDO DE PONTOS -->
+            <div class="painel-pontos">
+                <div>
+                    <p>SEU SALDO DISPONÍVEL</p>
+                    <strong id="saldoPontos">0 pontos</strong>
+                    <span>Continue reciclando para conquistar alimentos.</span>
+                </div>
+                <div class="icone-reciclagem">♻</div>
+            </div>
+
+            <!-- CADASTRO DE RECICLÁVEIS -->
+            <div class="area-reciclagem">
+
+                <div class="bloco-reciclagem">
+                    <h3>Registrar materiais recicláveis</h3>
+                    <p>
+                        Informe o material e o peso entregue no ponto
+                        de coleta parceiro.
+                    </p>
+
+                    <form id="formReciclagem">
+
+                        <label for="tipoReciclavel">
+                            Tipo de material
+                        </label>
+
+                        <select id="tipoReciclavel" required>
+                            <option value="">Selecione o material</option>
+                            <option value="aluminio">Latas de alumínio</option>
+                            <option value="pet">Garrafas PET</option>
+                            <option value="papel">Papel e papelão</option>
+                            <option value="vidro">Vidro</option>
+                        </select>
+
+                        <label for="pesoReciclavel">
+                            Peso em quilogramas (kg)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="pesoReciclavel"
+                            min="0.1"
+                            max="100"
+                            step="0.1"
+                            placeholder="Ex.: 2.5"
+                            required
+                        >
+
+                        <button type="submit">
+                            Calcular meus pontos
+                        </button>
+
+                        <p id="resultadoReciclagem" role="status" hidden></p>
+
+                    </form>
+                </div>
+
+                <!-- TABELA DE PONTUAÇÃO -->
+                <div class="bloco-reciclagem">
+                    <h3>Tabela de pontuação</h3>
+                    <p>Veja quantos pontos cada material pode gerar.</p>
+
+                    <div class="tabela-reciclagem">
+                        <div>
+                            <span>Latas de alumínio</span>
+                            <strong>30 pontos/kg</strong>
+                        </div>
+
+                        <div>
+                            <span>Garrafas PET</span>
+                            <strong>10 pontos/kg</strong>
+                        </div>
+
+                        <div>
+                            <span>Papel e papelão</span>
+                            <strong>5 pontos/kg</strong>
+                        </div>
+
+                        <div>
+                            <span>Vidro</span>
+                            <strong>3 pontos/kg</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CATÁLOGO DE ALIMENTOS -->
+            <div class="catalogo-alimentos">
+
+                <div class="titulo-secao">
+                    <p>SEU ESFORÇO VIRA ALIMENTO</p>
+                    <h2>Escolha o que deseja resgatar.</h2>
+                    <p>
+                        Utilize seus pontos acumulados para trocar
+                        por alimentos disponíveis no catálogo.
+                    </p>
+                </div>
+
+                <div class="lista-recompensas">
+
+                    <article class="card-recompensa">
+                        <div class="imagem-recompensa">🍚</div>
+                        <h3>Arroz — 1 kg</h3>
+                        <p>Um alimento essencial para o dia a dia.</p>
+                        <strong>30 pontos</strong>
+                        <button type="button"
+                            class="btnResgatar"
+                            data-produto="Arroz — 1 kg"
+                            data-pontos="30">
+                            Resgatar alimento
+                        </button>
+                    </article>
+
+                    <article class="card-recompensa">
+                        <div class="imagem-recompensa">🫘</div>
+                        <h3>Feijão — 1 kg</h3>
+                        <p>Uma fonte importante de nutrientes.</p>
+                        <strong>40 pontos</strong>
+                        <button type="button"
+                            class="btnResgatar"
+                            data-produto="Feijão — 1 kg"
+                            data-pontos="40">
+                            Resgatar alimento
+                        </button>
+                    </article>
+
+                    <article class="card-recompensa">
+                        <div class="imagem-recompensa">🍝</div>
+                        <h3>Macarrão — 500 g</h3>
+                        <p>Uma opção prática para as refeições.</p>
+                        <strong>15 pontos</strong>
+                        <button type="button"
+                            class="btnResgatar"
+                            data-produto="Macarrão — 500 g"
+                            data-pontos="15">
+                            Resgatar alimento
+                        </button>
+                    </article>
+
+                    <article class="card-recompensa">
+                        <div class="imagem-recompensa">🫒</div>
+                        <h3>Óleo — 900 ml</h3>
+                        <p>Um item importante na preparação dos alimentos.</p>
+                        <strong>35 pontos</strong>
+                        <button type="button"
+                            class="btnResgatar"
+                            data-produto="Óleo — 900 ml"
+                            data-pontos="35">
+                            Resgatar alimento
+                        </button>
+                    </article>
+
+                    <article class="card-recompensa">
+                        <div class="imagem-recompensa">🌾</div>
+                        <h3>Aveia — 500 g</h3>
+                        <p>Uma alternativa para complementar a alimentação.</p>
+                        <strong>20 pontos</strong>
+                        <button type="button"
+                            class="btnResgatar"
+                            data-produto="Aveia — 500 g"
+                            data-pontos="20">
+                            Resgatar alimento
+                        </button>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <!-- HISTÓRICO -->
+            <div class="historico-reciclagem">
+                <h3>Meu histórico</h3>
+                <p>Confira seus registros de reciclagem e resgates.</p>
+
+                <ul id="historicoReciclagem">
+                    <li>Nenhuma atividade registrada ainda.</li>
+                </ul>
+            </div>
+
+            <p class="aviso">
+                Demonstração do sistema de pontos. O peso informado
+                ainda não é verificado automaticamente. Em uma operação
+                real, a pontuação dependerá da pesagem e confirmação
+                por um ponto de coleta parceiro. Os alimentos dependem
+                da disponibilidade dos parceiros.
+            </p>
+
+        </section>
+
+
+
+ <!-- RODAPÉ -->
+    <footer>
+        <a href="#inicio" class="logo">Recomeço<span>.</span></a>
+
+        <p>Menos desperdício. Mais esperança.</p>
+
+        <nav>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#doacoes">Doações</a>
+            <a href="#instituicoes">Instituições</a>
+            <a href="#impacto">Impacto</a>
+        </nav>
+
+        <p>© 2026 Recomeço — Projeto demonstrativo.</p>
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
